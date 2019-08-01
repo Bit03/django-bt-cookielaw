@@ -1,6 +1,11 @@
+{% load i18n %}
+
 <div id="cookielaw-banner">
     <div class="container">
-        <a class="btn" href="javascript:Cookielaw.accept();">{{ instance.button_text }}</a>
-        {{ instance.text|safe }}
+        <h6>{% trans "COOKIE_INFO_HEADER" %}</h6>
+        <p>
+            <a class="btn btn-primary pull-right" href="javascript:Cookielaw.createCookielawCookie();">{% trans "COOKIE_INFO_OK" %}</a>
+            {% trans "COOKIE_INFO_PARA" %}
+        </p>
     </div>
 </div>
