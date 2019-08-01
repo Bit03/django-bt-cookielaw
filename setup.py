@@ -32,7 +32,7 @@ setup(
     ],
     packages=find_packages(),
     package_data={'blocktech_cookielaw': package_data},
-    include_package_data=False,
+    include_package_data=True,
     zip_safe=False,
     # test_suite='tests',
 )
